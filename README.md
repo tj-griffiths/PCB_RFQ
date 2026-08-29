@@ -104,7 +104,7 @@ the relevant section. Grouped roughly by what they characterize:
   this device — with a bunch FWHM of 4.11 µs and a 13.0 µs transit time from
   the exit aperture to the detector. At longer storage times, a slow
   chemical conversion of the trapped population into a heavier hydrated
-  cluster (tentatively Rb$^+$(H$_2$O)$_{19}$) was observed. The conversion
+  cluster (tentatively Rb⁺(H₂O)₁₉) was observed. The conversion
   rate scales with buffer gas pressure, pointing to the helium supply
   rather than the PCB itself as the water source, and was substantially
   slowed (τ increasing from 226 ± 14 ms to 531 ± 42 ms) by replacing a long
