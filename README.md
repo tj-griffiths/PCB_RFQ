@@ -22,11 +22,11 @@ stability parameter,
 
 $$q = \frac{4eV_{\mathrm{RF}}}{m\,\Omega^2 r_0^2},$$
 
-and the resulting time-averaged pseudopotential well depth,
+and the resulting time-averaged pseudopotential well depth at transverse coordinate $u$ is:
 
-$$D = \frac{q V_{\mathrm{RF}}}{4},$$
+$$D = \frac{q V_{\mathrm{RF}}}{4} \frac{u^2}{r_0^2},$$
 
-where $V_{pp}$ is the RF drive amplitude, $\Omega$ the drive frequency, $m$
+where $V_{\mathrm{RF}}$ is the RF drive amplitude, $\Omega$ the drive frequency, $m$
 the ion mass, and $r_0$ the field radius. Because the PCB electrodes in this
 device are not perfectly parallel or symmetric (a consequence of board
 assembly tolerances), $r_0$ is corrected to an effective value $r_{0,\text{eff}}$
@@ -37,7 +37,7 @@ Buffer-gas pressure inside the RFQ cannot be measured directly, so it is
 inferred from an externally indicated gauge reading via a vacuum
 conductance model (Dickel, PhD thesis, Univ. Giessen 2010):
 
-$$C = 3.63\,A\sqrt{\frac{T}{M}}\left[1+\frac{3}{16}\frac{L C}{A}\right]^{-1}\ \ [\text{L/s}],$$
+$$C = 3.63A\sqrt{\frac{T_{\mathrm{gas}}}{m_{\mathrm{gas}}}}\left[1+\frac{3}{16}\frac{L C}{A}\right]^{-1}\ \ [\text{L/s}],$$
 
 valid for both tubing segments and thin apertures, combined in series
 (pumping path) or parallel (multiple apertures) as appropriate.
@@ -172,7 +172,7 @@ see that notebook's header for details.
   overall confinement strength but not the resulting field-multipole
   content itself.
 - The secondary trapped species is tentatively identified as
-  $\text{Rb}^+(\text{H}_2\text{O})_{19}$ from its arrival-time mass ratio; a more precise
+  Rb⁺(H₂O)₁₉ from its arrival-time mass ratio; a more precise
   time-to-mass calibration was beyond the scope of this work and would help
   distinguish it from neighboring candidate cluster sizes.
 - An RFQ "Switchyard" concept (a downstream beam-routing extension) was
