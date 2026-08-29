@@ -1,0 +1,32 @@
+# Ion Count Rate vs. Internal RFQ Pressure
+# Corresponds to Figure 3.10
+# 
+# Purpose: characterizes how buffer-gas pressure inside the PCB RFQ
+# affects ion transmission, testing the trade-off between improved
+# buffer-gas cooling (which aids confinement) and increased collisional
+# scattering (which degrades extraction through the exit aperture) as
+# pressure increases. External (gauge) pressure is the directly measured
+# quantity; internal RFQ pressure is derived from it via the vacuum
+# conductance model described in Appendix A.2, since the RFQ interior
+# cannot be measured directly.
+# 
+# Conditions: Vpp=320V, 1144kHz, heating power=1.79W.
+# 
+# Columns:
+#   pressure_mbar   - Indicated external (gauge) pressure, raw reading (mbar)
+#   p_rfq_mbar      - Derived RFQ internal pressure (mbar)
+#   rate_hz         - Ion count rate (Hz)
+#   rate_unc_hz     - Ion count rate uncertainty (Hz)
+#   file            - Source .mpa filename
+pressure_mbar,p_rfq_mbar,rate_hz,rate_unc_hz,file
+2e-06,0.0,190.18931157613358,1.3773158166179151,Pressure/PS_2.0_6_4.mpa
+2.2e-06,0.0001791582903108048,248.48830120036382,1.5759336031829414,Pressure/PS_2.2_6_4.mpa
+3.3999999999999996e-06,0.0012541080321756318,276.85896731255434,1.6633342007749827,Pressure/PS_3.4_6_4.mpa
+4.2999999999999995e-06,0.0020603203385742524,290.28464359751234,1.7009190263443694,Pressure/PS_4.3_6_4.mpa
+4.9999999999999996e-06,0.0026873743546620686,301.8478445138065,1.7349583052749011,Pressure/PS_5.0_6_4.mpa
+6.3e-06,0.0038519032416822986,310.2499975089925,1.7582207588454162,Pressure/PS_6.3_6_4.mpa
+6.9e-06,0.004389378112614714,315.00449236298294,1.7733299003399177,Pressure/PS_6.9_6_4.mpa
+8.4e-06,0.005733065289945747,316.16215082543516,1.776949146988957,Pressure/PS_8.4_6_4.mpa
+1.1000000000000001e-05,0.00806212306398621,308.26060442471686,1.7554806600092026,Pressure/PS_1.1_5_4.mpa
+1.3000000000000001e-05,0.009853705967094256,301.8117278718928,1.7347507143678078,Pressure/PS_1.3_5_4.mpa
+1.6000000000000003e-05,0.012541080321756326,292.67465408365837,1.708715903724504,Pressure/PS_1.6_5_4.mpa

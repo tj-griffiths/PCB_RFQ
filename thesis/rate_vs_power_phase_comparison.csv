@@ -1,0 +1,32 @@
+# Detector Count Rate vs. Source Heating Power -- Phase 1 (Baseline) vs.
+# Phase 2 (PCB RFQ)
+# Corresponds to Figure 4.1
+# 
+# Purpose: the core dataset for the PCB RFQ's transmission efficiency
+# measurement (Table 4.1). Phase 1 was measured with only the source and
+# detector installed, representing the total ion flux available for
+# detection at a given heating power. Phase 2 was measured with the PCB
+# RFQ inserted into the beamline between them. Comparing detector rate at
+# matched heating power between the two phases isolates the fraction of
+# ion flux lost during transport through the PCB RFQ. The two phases were
+# not measured at identical heating power settings, requiring
+# interpolation (see Table 4.1) to compare them directly.
+# 
+# Columns:
+#   power_w      - Source heating power (W)
+#   rate_hz      - Detector ion count rate (Hz)
+#   rate_err_hz  - Detector rate uncertainty (Hz)
+#   phase        - 'Phase 1 (Baseline)' or 'Phase 2 (PCB RFQ)'
+power_w,rate_hz,rate_err_hz,phase
+1.843,3393.849312146742,4.756136699314588,Phase 1 (Baseline)
+1.8719999999999999,5395.197365350898,5.997311285127831,Phase 1 (Baseline)
+1.9303,8725.237806381943,7.626379244943327,Phase 1 (Baseline)
+1.9796,13356.77440853049,9.434802112033873,Phase 1 (Baseline)
+2.0294999999999996,18913.982937883233,11.227626805855744,Phase 1 (Baseline)
+2.08,27365.171197952423,13.505435176943527,Phase 1 (Baseline)
+1.8473,2354.8142077594994,4.851236138572634,Phase 2 (PCB RFQ)
+1.8786399999999999,3136.6663006259296,5.595812503578518,Phase 2 (PCB RFQ)
+1.9345199999999998,4143.044095023076,6.43336808839435,Phase 2 (PCB RFQ)
+1.9864,6281.726446198421,7.9221701420885955,Phase 2 (PCB RFQ)
+2.0284299999999997,9396.414043994922,9.690748752880557,Phase 2 (PCB RFQ)
+2.07956,13579.95680172793,11.653074111659517,Phase 2 (PCB RFQ)

@@ -1,0 +1,29 @@
+# Ion Count Rate vs. Source Heating Power
+# Corresponds to Figure A.1
+# 
+# Purpose: a broad initial survey of the ion source's usable heating range,
+# before the narrower, matched-condition scans used for the transmission
+# efficiency measurement (Chapter 4). Conducted at a lower detector bias
+# and over a wider heating power range than the efficiency measurements,
+# so values here are not directly comparable to those in Chapter 4.
+# 
+# Test conducted at 2000V detector bias, -7mV threshold (30/06/26).
+# Heating power computed as heater voltage x heater current.
+# 
+# Columns:
+#   current_amps - Source heater current (A)
+#   voltage_v    - Source heater voltage (V)
+#   power_w      - Heating power (W) = current_amps x voltage_v
+#   file         - Source .mpa filename
+#   realtime_s   - Acquisition real time (s)
+#   totalsum     - Total detector counts
+#   rate_hz      - Ion count rate (Hz) = totalsum / realtime_s
+current_amps,voltage_v,power_w,file,realtime_s,totalsum,rate_hz
+0.75,1.19,0.8925,Current075.mpa,150.137,6.0,0.03996350000333029
+0.8,1.35,1.08,Current080.mpa,150.122,15.0,0.0999187327640186
+0.85,1.48,1.258,Current085.mpa,150.052,170.0,1.1329405805987258
+0.9,1.63,1.4669999999999999,Current090.mpa,150.124,2049.0,13.648717060563268
+0.95,1.77,1.6815,Current095.mpa,150.055,14540.0,96.89780413848256
+1.0,1.92,1.92,Current100.mpa,150.016,105755.0,704.9581377986349
+1.05,2.08,2.184,Current105.mpa,150.106,462930.0,3084.0206254247
+1.1,2.25,2.475,Current110.mpa,150.072,1256640.0,8373.580681272988

@@ -1,0 +1,25 @@
+# Detector Count Rate vs. Aperture-Derived Ion Rate
+# Corresponds to Figure 3.5
+# 
+# Purpose: to verify the detector's response tracks source output sensibly
+# before using it for transmission efficiency measurements. Aperture rate
+# is an independent estimate of the ion flux entering the beamline,
+# obtained by converting the picoammeter-measured aperture current to an
+# equivalent singly-charged ion arrival rate, R_ap = I_ap / e. Comparing
+# this against the detector's own measured rate at the same heating
+# current provides a cross-check independent of the detector itself.
+# 
+# Columns:
+#   amps          - Source heater current (A)
+#   ap_avg_pa     - Mean aperture current across repeated readings (pA)
+#   ap_rate_hz    - Aperture ion rate (Hz) = ap_avg_pa x 1e-12 / e
+#   ap_rate_err_hz- Propagated uncertainty on aperture ion rate (Hz)
+#   rate_hz       - Detector ion count rate (Hz)
+#   rate_err_hz   - Detector rate uncertainty (Hz)
+amps,ap_avg_pa,ap_rate_hz,ap_rate_err_hz,rate_hz,rate_err_hz
+0.95,0.682,4257178.526841449,275538.00012063,3393.849312146742,4.756136699314588
+0.96,1.1729999999999996,7322097.378277151,587198.0244753517,5395.197365350898,5.997311285127831
+0.97,2.165,13514357.053682897,289700.42758505227,8725.237806381943,7.626379244943327
+0.98,3.614,22559300.873907614,299683.2607139214,13356.77440853049,9.434802112033873
+0.99,5.914999999999999,36922596.75405742,316688.5676722242,18913.982937883233,11.227626805855744
+1.0,10.184000000000001,63570536.8289638,261080.1022281844,27365.171197952423,13.505435176943527

@@ -1,0 +1,59 @@
+# Peak 1 and Peak 2 Integrated Area vs. Storage Time -- Pressure and
+# Tubing Comparison
+# Corresponds to Figures 4.3 and 4.4
+# 
+# Purpose: identifies the source of a slow chemical conversion of the
+# trapped primary ion population into a heavier secondary species (a
+# hydrated rubidium cluster, tentatively Rb+(H2O)19; Section 4.2.1),
+# observed as ions are stored in the PCB RFQ. Peak 1 and Peak 2 areas are
+# modeled as a two-state conversion process, N1(t)=N0*exp(-kt),
+# N2(t)=N0*(1-exp(-kt)), giving a characteristic conversion time constant
+# tau=1/k.
+# 
+# Figure 4.3 compares low buffer gas pressure (~4.4e-3 mbar) against high
+# pressure (~6.1e-2 mbar): tau decreases from ~1215ms to ~226ms, a
+# pressure-dependent rate consistent with the water source being the
+# helium gas supply rather than intrinsic PCB outgassing.
+# 
+# Figure 4.4 compares the same high-pressure condition before and after
+# replacing the gas inlet's long (~4m) PTFE tubing with shorter (~1.5m)
+# copper tubing: tau increases from ~226ms to ~531ms, consistent with
+# water permeating through or outgassing from the more porous PTFE
+# tubing itself.
+# 
+# In all conditions, the combined (Peak1+Peak2) area remains approximately
+# constant across storage time, indicating population is redistributed
+# between the two states rather than lost from the trap.
+# 
+# Columns:
+#   condition       - Measurement condition: 'Low Pressure', 'High Pressure
+#                     (PTFE Tubing)', or 'High Pressure (Copper Tubing)'
+#   storage_delay_ms- Storage (trapping) time before extraction (ms)
+#   peak1_area      - Integrated counts, primary (Peak 1) population
+#   peak1_area_err  - Poisson uncertainty on peak1_area
+#   peak2_area      - Integrated counts, secondary (Peak 2) population
+#   peak2_area_err  - Poisson uncertainty on peak2_area
+#   combined_area   - peak1_area + peak2_area
+#   combined_area_err - Propagated uncertainty on combined_area
+condition,storage_delay_ms,peak1_area,peak1_area_err,peak2_area,peak2_area_err,combined_area,combined_area_err
+Low Pressure,10.0,17688,132.9962405483704,117,10.816653826391969,17805,133.4353776177817
+Low Pressure,20.0,17319,131.6016717219048,237,15.394804318340652,17556,132.4990566004151
+Low Pressure,40.0,16902,130.0076920801227,522,22.847319317591726,17424,132.0
+Low Pressure,80.0,16437,128.20686409081225,1072,32.7414110874898,17509,132.32157798333574
+Low Pressure,160.0,14889,122.02049008260866,2082,45.628938186199335,16971,130.2727907124124
+Low Pressure,250.0,13470,116.06032913963324,3085,55.54277630799526,16555,128.666234887013
+Low Pressure,400.0,11043,105.08567932882197,4486,66.9776081985614,15529,124.61540835707277
+High Pressure (PTFE Tubing),10.0,59523,243.97335920136854,5251,72.46378405796926,64774,254.50736728039917
+High Pressure (PTFE Tubing),20.0,57854,240.52858457987898,8900,94.33981132056604,66754,258.36795466930494
+High Pressure (PTFE Tubing),40.0,54837,234.17301296263838,14798,121.64703037887936,69635,263.88444440701693
+High Pressure (PTFE Tubing),80.0,47906,218.87439320304236,24071,155.14831613652788,71977,268.28529590717415
+High Pressure (PTFE Tubing),160.0,34610,186.03763060198332,36234,190.35230495058366,70844,266.16536213414395
+High Pressure (PTFE Tubing),250.0,23896,154.5833108715168,42402,205.91745919178393,66298,257.48398008419866
+High Pressure (PTFE Tubing),400.0,13078,114.35908359199107,47223,217.30853641769346,60301,245.56261930513773
+High Pressure (Copper Tubing),10.0,55708,236.0254223595416,1728,41.569219381653056,57436,239.65808978626197
+High Pressure (Copper Tubing),20.0,55522,235.63106756113464,3510,59.2452529743945,59032,242.96501805815586
+High Pressure (Copper Tubing),40.0,54991,234.50159914166898,6321,79.50471684120383,61312,247.6126006486746
+High Pressure (Copper Tubing),80.0,53179,230.60572412670072,11214,105.89617556833674,64393,253.7577585020801
+High Pressure (Copper Tubing),160.0,49013,221.38879827127658,19452,139.47042697288913,68465,261.658173959844
+High Pressure (Copper Tubing),250.0,44898,211.89148165983454,25284,159.00943368240766,70182,264.91885550107605
+High Pressure (Copper Tubing),400.0,37151,192.74594677969236,32268,179.63295911385526,69419,263.47485648539595

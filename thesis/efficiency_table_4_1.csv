@@ -1,0 +1,22 @@
+# Transmission Efficiency of the PCB RFQ
+# Corresponds to Table 4.1
+# 
+# Purpose: the headline transmission efficiency result of this thesis --
+# the fraction of the baseline ion flux (Figure 4.1) that survives
+# transport through the PCB RFQ, at each PCB RFQ heating power tested.
+# Since the baseline and PCB RFQ configurations were not measured at
+# identical heating power values, each PCB RFQ point's efficiency is
+# computed against a baseline rate obtained by linear interpolation
+# between the two nearest baseline measurements at neighboring powers.
+# 
+# Columns:
+#   power_w         - Source heating power (W), PCB RFQ setting
+#   efficiency_pct  - Transmission efficiency at this power point (%)
+#   efficiency_err_pct - Propagated per-point uncertainty (%)
+power_w,efficiency_pct,efficiency_err_pct
+1.8473,63.805712369918446,0.15675909674884966
+1.8786399999999999,54.319573489283734,0.11301999098031815
+1.9345199999999998,45.41969936525884,0.08046986533123376
+1.9864,44.50684127076325,0.06389140763590222
+2.0284299999999997,49.9946999701175,0.05953466847034161
+2.07956,49.758856603485256,0.04927170011923998

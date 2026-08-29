@@ -1,0 +1,23 @@
+# Detected Percentage vs. Source Heating Power
+# Corresponds to Figure 3.6
+# 
+# Purpose: quantifies what fraction of ions leaving the source (as
+# estimated from aperture current, Figure 3.5) are actually registered by
+# the detector, as a function of heating power. Detected percentage is
+# defined as P_det = R_detected / (R_ap + R_detected) x 100. This
+# establishes the baseline detector response used for the transmission
+# efficiency comparison in Chapter 4. The tested heating power range was
+# bounded by the picoammeter's noise floor at low power and a practical
+# detector count-rate ceiling (~25,000 Hz) at high power.
+# 
+# Columns:
+#   power_w        - Source heating power (W)
+#   efficiency_pct - Detected percentage (%)
+#   efficiency_err_pct - Propagated uncertainty on detected percentage (%)
+power_w,efficiency_pct,efficiency_err_pct
+1.843,0.07965712145020938,0.005152760319380342
+1.8719999999999999,0.07362951664100222,0.005900962641538928
+1.9303,0.06452107306832816,0.0013833616932168442
+1.9796,0.0591723607234475,0.0007867047720035052
+2.0294999999999996,0.0511998089968251,0.0004399706566246829
+2.08,0.04302841813536998,0.0001779097194781552

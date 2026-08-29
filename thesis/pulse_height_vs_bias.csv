@@ -1,0 +1,26 @@
+# Average Detector Pulse Amplitude vs. Bias Voltage
+# Corresponds to Figure A.2
+# 
+# Purpose: an independent check that detector gain (secondary-electron
+# multiplication per ion) increases with bias, using oscilloscope pulse
+# amplitude rather than count rate. The oscilloscope and TDC were
+# connected in parallel without an active signal splitter, so absolute
+# amplitude values should be treated as qualitative rather than precisely
+# calibrated.
+# 
+# Oscilloscope settings: -7mV falling edge trigger, average acquisition mode
+# (512 sweeps), amplitude measurement, 4ns/10.0mV scale.
+# Each bias voltage's mean and SEM computed from 16 individual measurements.
+# 
+# Columns:
+#   bias_volts        - Detector bias voltage (V)
+#   mean_amplitude_mv - Mean pulse amplitude across 16 measurements (mV)
+#   sem_amplitude_mv  - Standard error of the mean (mV)
+#   n_measurements    - Number of individual measurements averaged
+bias_volts,mean_amplitude_mv,sem_amplitude_mv,n_measurements
+2000,10.80125,0.02853178052628328,16
+2100,12.62875,0.05843711007000027,16
+2200,16.281875,0.0870259479982838,16
+2300,22.374375,0.17087756033195228,16
+2400,30.514375,0.2092366458303452,16
+2500,40.04875,0.2908863967828907,16

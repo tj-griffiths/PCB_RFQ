@@ -1,0 +1,75 @@
+# Ion Count Rate vs. Injection Energy, by DC Gradient Configuration
+# Corresponds to Figure 3.7
+# 
+# Purpose: characterizes axial ion confinement/transport along the PCB RFQ
+# under three DC gradient configurations (10V difference across the
+# 20-resistor chain): a negative-slope gradient (accelerating ions toward
+# the exit), a flat no-gradient configuration, and a positive-slope
+# gradient (opposing ion motion). Injection energy is swept and expressed
+# relative to the DC In voltage, testing how much kinetic energy an ion
+# needs on entry to be transmitted under each axial field configuration.
+# 
+# Conditions: Vpp=320V, 1144kHz, pressure=4.389e-3 mbar
+# (gauge reading 6.9e-6, baseline 2.0e-6), heating power 1.79W.
+# 
+# Columns:
+#   grad_type    - DC gradient configuration
+#   injection_v  - Injection energy relative to DC Gradient (V)
+#   rate_hz      - Ion count rate (Hz)
+#   rate_unc_hz  - Ion count rate uncertainty (Hz)
+#   file         - Source .mpa filename
+grad_type,injection_v,rate_hz,rate_unc_hz,file
+Negative Gradient,-5.0,0.3097521982414069,0.05563313711860533,Gradient/Grad_10_-5_2.mpa
+Negative Gradient,-4.0,0.3497027526602388,0.05911055386021498,Gradient/Grad_10_-4_2.mpa
+Negative Gradient,-3.0,0.47967382180117524,0.06923495253503127,Gradient/Grad_10_-3_2.mpa
+Negative Gradient,-2.0,0.48962788280906516,0.06994684040129502,Gradient/Grad_10_-2_2.mpa
+Negative Gradient,-1.0,0.4497166784925497,0.06703980424831725,Gradient/Grad_10_-1_2.mpa
+Negative Gradient,0.0,25.950332479288583,0.50863453273746,Gradient/Grad_10_0_2.mpa
+Negative Gradient,1.0,368.45260696656607,1.9187637632730732,Gradient/Grad_10_1_2.mpa
+Negative Gradient,2.0,424.66887417218544,2.058034742960701,Gradient/Grad_10_2_2.mpa
+Negative Gradient,3.0,467.2953150725939,2.1593813595184828,Gradient/Grad_10_3_2.mpa
+Negative Gradient,4.0,515.761454719464,2.267548868569513,Gradient/Grad_10_4_2.mpa
+Negative Gradient,5.0,526.4343976227988,2.291141831027255,Gradient/Grad_10_5_2.mpa
+Negative Gradient,6.0,488.6255876862878,2.2084899213414473,Gradient/Grad_10_6_2.mpa
+Negative Gradient,7.0,543.972248048066,2.3319831513776745,Gradient/Grad_10_7_2.mpa
+Negative Gradient,8.0,552.2666879782621,2.348837904048114,Gradient/Grad_10_8_2.mpa
+Negative Gradient,9.0,581.4854381533362,2.409486136142589,Gradient/Grad_10_9_2.mpa
+Negative Gradient,10.0,646.5436221480134,2.542493392794306,Gradient/Grad_10_10_2.mpa
+Negative Gradient,11.0,679.3527030530241,2.60261649296596,Gradient/Grad_10_11_2.mpa
+Negative Gradient,12.0,695.0884518184814,2.634991003980609,Gradient/Grad_10_12_2.mpa
+No Gradient,-5.0,0.19998400127989763,0.0447177821274256,Gradient/Grad_0_-5_2.mpa
+No Gradient,-4.0,0.319744204636291,0.05652332383585512,Gradient/Grad_0_-4_2.mpa
+No Gradient,-3.0,0.3697079307347196,0.06077960941154707,Gradient/Grad_0_-3_2.mpa
+No Gradient,-2.0,0.3796810679029615,0.06159240241166396,Gradient/Grad_0_-2_2.mpa
+No Gradient,-1.0,0.44964927356661805,0.06702975611522381,Gradient/Grad_0_-1_2.mpa
+No Gradient,0.0,2.649006622516556,0.16242101708211013,Gradient/Grad_0_0_2.mpa
+No Gradient,1.0,177.98662534009708,1.3318606879462893,Gradient/Grad_0_1_2.mpa
+No Gradient,2.0,251.42133296096074,1.5835855997583654,Gradient/Grad_0_2_2.mpa
+No Gradient,3.0,311.0417891704954,1.7606734477098356,Gradient/Grad_0_3_2.mpa
+No Gradient,4.0,385.37062350957365,1.9609007092778474,Gradient/Grad_0_4_2.mpa
+No Gradient,5.0,441.36607597973074,2.100314918943152,Gradient/Grad_0_5_2.mpa
+No Gradient,6.0,386.90416758192384,1.9654751367922927,Gradient/Grad_0_6_2.mpa
+No Gradient,7.0,473.05132701044073,2.1708968579353334,Gradient/Grad_0_7_2.mpa
+No Gradient,8.0,502.1137106365117,2.240106265326791,Gradient/Grad_0_8_2.mpa
+No Gradient,9.0,541.8348183961322,2.3264786010332807,Gradient/Grad_0_9_2.mpa
+No Gradient,10.0,527.7306733167082,2.29437276118092,Gradient/Grad_0_10_2.mpa
+No Gradient,11.0,604.7092686241979,2.4583708844571768,Gradient/Grad_0_11_2.mpa
+No Gradient,12.0,663.9035644019215,2.574972295350779,Gradient/Grad_0_12_2.mpa
+Positive Gradient,-5.0,0.24962057672338045,0.04992411534467609,Gradient/Grad_-10_-5_2.mpa
+Positive Gradient,-4.0,0.2597843789654587,0.0509479083719791,Gradient/Grad_-10_-4_2.mpa
+Positive Gradient,-3.0,0.27978456588426914,0.0528743130002816,Gradient/Grad_-10_-3_2.mpa
+Positive Gradient,-2.0,0.32973621103117506,0.05739970670002027,Gradient/Grad_-10_-2_2.mpa
+Positive Gradient,-1.0,0.49959532778449456,0.07065344882510642,Gradient/Grad_-10_-1_2.mpa
+Positive Gradient,0.0,0.5796811753535555,0.0761158673316067,Gradient/Grad_-10_0_2.mpa
+Positive Gradient,1.0,0.5996402158704777,0.07741321899275269,Gradient/Grad_-10_1_2.mpa
+Positive Gradient,2.0,0.7195610677486732,0.08480108508048659,Gradient/Grad_-10_2_2.mpa
+Positive Gradient,3.0,0.599538355466291,0.07740006887111758,Gradient/Grad_-10_3_2.mpa
+Positive Gradient,4.0,0.6695915491550154,0.08180362750594587,Gradient/Grad_-10_4_2.mpa
+Positive Gradient,5.0,0.6195415392609469,0.07868185416803376,Gradient/Grad_-10_5_2.mpa
+Positive Gradient,6.0,197.28467124201887,1.401828725622565,Gradient/Grad_-10_6_2.mpa
+Positive Gradient,7.0,273.9911969898097,1.6536729199073346,Gradient/Grad_-10_7_2.mpa
+Positive Gradient,8.0,383.0546665470244,1.954258804335296,Gradient/Grad_-10_8_2.mpa
+Positive Gradient,9.0,438.7152829792971,2.0931825478273742,Gradient/Grad_-10_9_2.mpa
+Positive Gradient,10.0,506.2375971040796,2.2468402788105393,Gradient/Grad_-10_10_2.mpa
+Positive Gradient,11.0,545.477196619359,2.33163146924155,Gradient/Grad_-10_11_2.mpa
+Positive Gradient,12.0,587.3913216878041,2.420036724255991,Gradient/Grad_-10_12_2.mpa
